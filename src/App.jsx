@@ -22,7 +22,7 @@ function App() {
         <Skills />
         <Work />
        {/* <Team /> */} 
-        <Teams />
+       {/* <Teams />*/}
         <Contact />
       
         
