@@ -1,0 +1,80 @@
+/* Estilos Gerais */
+.skills {
+    text-align: center; /* Centraliza o texto no contêiner */
+}
+
+.skills__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__title {
+    font-size: 3rem; /* Ajuste o tamanho do título conforme necessário */
+    font-weight: bold;
+    color: var(--title-color); /* Defina a cor do título */
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0.25rem;
+}
+
+.section__subtitle {
+    font-size: 1.25rem; /* Ajuste o tamanho do subtítulo conforme necessário */
+    font-weight: 600;
+    color: rgb(110, 110, 110); /* Ajuste a margem superior para aproximar do título */
+    margin-bottom: 2rem; /* Espaçamento abaixo do subtítulo */
+}
+
+.skills__description {
+    max-width: 800px; /* Define a largura máxima da descrição */
+    padding: 0 1.5rem; /* Adiciona algum padding lateral */
+    font-size: 1.25rem; /* Ajuste o tamanho da fonte conforme necessário */
+    line-height: 1.6; /* Melhora a legibilidade do texto */
+    color: var(--text-color); /* Define a cor do texto */
+    margin: 0 auto 2rem; /* Centraliza o elemento horizontalmente e adiciona espaçamento abaixo */
+    text-align: center; /* Centraliza o texto */
+}
+
+.section__icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.section__icon {
+    font-size: 3rem;
+    color: var(--first-color);
+}
+
+
+@media screen and (max-width: 992px) {
+    .skills__container {
+        padding: 0 2rem; /* Adiciona padding lateral em telas médias */
+    }
+
+    .skills__description {
+        padding: 0 2rem; /* Ajusta o padding lateral */
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .skills__description {
+        padding: 0 1rem; /* Ajusta o padding lateral em telas pequenas */
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .skills__description {
+        padding: 0 0.5rem; /* Ajusta o padding lateral em telas extra pequenas */
+    }
+}

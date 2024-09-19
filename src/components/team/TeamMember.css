@@ -1,0 +1,58 @@
+.team-member {
+  background-color: var(--container-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member__image {
+  width: 100%; /* Preencherá toda a largura do contêiner */
+  height: 250px;
+  width: 250px; /* Ajuste para uma altura maior */
+  overflow: hidden; /* Garante que a imagem não transborde do contêiner */
+}
+
+.team-member__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
+  /* Adiciona a propriedade object-position para centralizar a imagem */
+  object-position: center;
+}
+
+.team-member__info {
+  padding: 1rem;
+  background-color: #007bff; /* Muda a cor de fundo para azul */
+  color: white; /* Muda a cor do texto para branco */
+}
+
+.team-member__name {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-member__title {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.work__item.team-member {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0; /* Remove padding para que a imagem ocupe todo o espaço */
+  border-radius: 1rem;
+  text-align: center; /* Centraliza o conteúdo do item */
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .team__members {
+    grid-template-columns: 1fr; /* Uma coluna para telas menores */
+  }
+}

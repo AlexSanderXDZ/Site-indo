@@ -1,0 +1,75 @@
+/* Estilos Gerais */
+.about {
+    text-align: center; /* Centraliza o texto no contêiner */
+}
+
+.about__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.section__title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--title-color);
+    position: relative;
+    display: inline-block;
+}
+
+.section__subtitle {
+    font-size: 1.5rem; /* Ajuste o tamanho do subtítulo conforme necessário */
+    font-weight: 600;
+    color: var(--subtitle-color); /* Ajuste a margem superior para aproximar do título */
+    margin-bottom: 2rem; /* Espaçamento abaixo do subtítulo */
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__description {
+    max-width: 800px; /* Define a largura máxima da descrição */
+    padding: 0 1.5rem; /* Adiciona algum padding lateral */
+    font-size: 1.25rem; /* Ajuste o tamanho da fonte conforme necessário */
+    line-height: 1.6; /* Melhora a legibilidade do texto */
+    color: var(--text-color); /* Define a cor do texto */
+    margin-bottom: 2rem; /* Espaçamento abaixo da descrição */
+}
+
+/* Media Queries */
+
+/* Para telas médias (max-width: 992px) */
+@media screen and (max-width: 992px) {
+    .about__container {
+        padding: 0 2rem; /* Adiciona padding lateral em telas médias */
+    }
+
+    .about__description {
+        padding: 0 2rem; /* Ajusta o padding lateral */
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about__description {
+        padding: 0 1rem; /* Ajusta o padding lateral em telas pequenas */
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .about__description {
+        padding: 0 0.5rem; /* Ajusta o padding lateral em telas extra pequenas */
+    }
+}

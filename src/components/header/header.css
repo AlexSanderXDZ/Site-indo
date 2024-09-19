@@ -1,0 +1,302 @@
+/* Estilos gerais */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--body-color);
+}
+
+.nav {
+    height: calc(var(--header-height) + 2rem);
+    display: flex;
+    justify-content: space-between; /* Espaça os itens entre o início e o final do contêiner */
+    align-items: center;
+    padding: 3rem 1rem /* Ajusta o padding da navbar, adiciona mais espaço à esquerda */
+}
+
+.nav__logo {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    font-size: 2rem; /* Aumenta o tamanho da fonte do logo */
+    display: flex;
+    align-items: center;
+}
+
+
+
+.nav__logo img {
+    width: 2rem; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 2rem; /* Ajuste o tamanho da imagem conforme necessário */
+    margin-right: 0.5rem; /* Espaço entre a imagem e o texto */
+}
+
+.nav__toggle {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px; /* Ajusta o tamanho da fonte dos links */
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    transition: 0.3s;
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.nav__icon,
+.nav__close,
+.nav__toggle {
+    display: none;
+}
+
+.active-link,
+.nav__link:hover {
+    color: var(--title-color-dark);
+}
+
+/* Estilos para o botão de escolha de tema */
+.theme__button {
+    text-align: center;
+    position: relative; /* Garante posicionamento relativo */
+}
+
+.theme__button-toggle {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.theme__button-toggle:hover {
+    background-color: var(--primary-color-dark);
+    transform: scale(1.1);
+}
+
+.theme__options {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%; /* Posição abaixo do botão por padrão */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--body-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, visibility 0.3s ease, top 0.3s ease;
+}
+
+.theme__button-toggle:hover + .theme__options,
+.theme__options:hover {
+    opacity: 1;
+    visibility: visible;
+    top: calc(100% + 0.5rem); /* Ajusta a posição quando o menu está visível */
+}
+
+.theme__option {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    border: none;
+    width: 3rem;
+    height: 3rem; /* Ajusta o tamanho conforme necessário */
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme__option:hover {
+    background-color: var(--primary-color-dark);
+    transform: scale(1.1);
+}
+
+/* Media query para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    .header {
+        top: initial;
+        bottom: 0;
+    }
+
+    .nav {
+        height: var(--header-height);
+    }
+
+    .nav__menu {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: 0.3s;
+        z-index: 1000;
+    }
+
+    .nav__icon {
+        font-size: 1.2rem;
+    }
+
+    .nav__close {
+        position: absolute;
+        right: 1.3rem;
+        bottom: 0.5rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--title-color);
+    }
+
+    .nav__close:hover {
+        color: var(--title-color-dark);
+    }
+
+    .nav__toggle {
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+
+    .show-menu {
+        bottom: 0;
+    }
+
+    .nav__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .nav__icon,
+    .nav__close,
+    .nav__toggle {
+        display: block;
+    }
+
+    /* Estilos para o botão de escolha de tema */
+    .theme__button {
+        text-align: center;
+    }
+
+    .theme__button-toggle {
+        background-color: var(--primary-color);
+        color: var(--button-text-color);
+        border: none;
+        padding: 0.5rem;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+
+    .theme__button-toggle:hover {
+        background-color: var(--primary-color-dark);
+        transform: scale(1.1);
+    }
+
+    /* Estilos para o menu de opções de tema */
+    .theme__options {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: initial;
+        bottom: calc(var(--header-height) + 2.5rem); /* Posiciona abaixo do cabeçalho */
+        left: 50%;
+        transform: translateX(100%);
+        background-color: var(--body-color);
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: opacity 0.3s ease, visibility 0.3s ease, bottom 0.3s ease, transform 0.3s ease;
+    }
+
+    .theme__button-toggle:hover + .theme__options,
+    .theme__options:hover {
+        opacity: 1;
+        visibility: visible;
+        bottom: calc(var(--header-height) + 1.5rem); /* Ajuste conforme necessário */
+        transform: translateX(-50%);
+    }
+
+    .theme__option {
+        background-color: var(--primary-color);
+        color: var(--button-text-color);
+        border: none;
+        width: 3rem;
+        height: 3rem; /* Ajuste o tamanho conforme necessário */
+        border-radius: 50%;
+        cursor: pointer;
+        margin: 0.5rem;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .theme__option:hover {
+        background-color: var(--primary-color-dark);
+        transform: scale(1.1);
+    }
+
+    /* Ajuste para o menu de opções aparecer para cima */
+    .theme__options {
+        bottom: initial;
+        top: calc(-100% - 0.5rem); /* Posiciona acima do botão */
+        transform: translateX(100%);
+    }
+
+    .theme__button-toggle:hover + .theme__options,
+    .theme__options:hover {
+        bottom: calc(var(--header-height) + 1.5rem); /* Ajuste conforme necessário */
+        top: initial;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .nav__menu {
+        padding: 2rem 0.25rem 4rem;
+    }
+
+    .nav__list {
+        column-gap: 0;
+    }
+
+    /* Remova o título quando o menu de tema está aberto */
+    .theme__title {
+        display: none;
+    }
+}

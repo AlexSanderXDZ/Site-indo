@@ -1,0 +1,17 @@
+.team {
+  padding: 4rem 0;
+}
+
+.team__title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.team__members {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+
