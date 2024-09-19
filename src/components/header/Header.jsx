@@ -19,28 +19,13 @@ const Header = () => {
         };
     }, []);
 
-    const changeTheme = (primaryColor, titleColor, bodyColor, textColor, containerColor) => {
-        document.documentElement.style.setProperty("--primary-color", primaryColor);
-        document.documentElement.style.setProperty("--title-color", titleColor);
-        document.documentElement.style.setProperty("--body-color", bodyColor);
-        document.documentElement.style.setProperty("--text-color", textColor);
-        document.documentElement.style.setProperty("--container-color", containerColor);
-    };
-
+ 
     const closeMenus = () => {
         setToggleMenu(false);
         setToggleThemeOptions(false);
     };
 
-    const themeOptions = [
-        { id: 1, primaryColor: "rgba(25, 118, 210, 1)", titleColor: "rgba(51, 51, 51, 1)", bodyColor: "rgba(245, 245, 245, 1)", textColor: "rgba(30, 30, 30, 1)", containerColor: "rgba(245, 245, 245, 1)" },
-        { id: 2, primaryColor: "rgba(245, 166, 35, 1)", titleColor: "rgba(51, 51, 51, 1)", bodyColor: "rgba(245, 245, 245, 1)", textColor: "#e68a00", containerColor: "rgba(245, 245, 245, 1)" },
-        { id: 3, primaryColor: "rgba(255, 0, 0, 1)", titleColor: "rgba(51, 51, 51, 1)", bodyColor: "rgba(245, 245, 245, 1)", textColor: "#ff0000", containerColor: "rgba(245, 245, 245, 1)" },
-        { id: 4, primaryColor: "rgba(0, 176, 80, 1)", titleColor: "#ffffff", bodyColor: "rgba(30, 30, 30, 1)", textColor: "#4CAF50", containerColor: "rgba(30, 30, 30, 1)" },
-        { id: 5, primaryColor: "rgba(186, 85, 211, 1)", titleColor: "#ffffff", bodyColor: "rgba(30, 30, 30, 1)", textColor: "#d8a8ff", containerColor: "rgba(30, 30, 30, 1)" },
-        { id: 6, primaryColor: "rgba(25, 25, 112, 1)", titleColor: "#ffffff", bodyColor: "rgba(30, 30, 30, 1)", textColor: "#00cec9", containerColor: "rgba(30, 30, 30, 1)" }
-    ];
-
+ 
     return (
         <header className="header">
             <nav className="nav container">

@@ -39,7 +39,7 @@ const Team = () => {
   return (
     <section className="team">
       <h2 className="team__title">Nossa Equipe</h2>
-      <span className="section__subtitle">Nossos membros</span>
+      <span className="section__subtitle"></span>
       <div className="team__members">
         {teamData.map((member, index) => (
           <TeamMember 

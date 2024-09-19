@@ -13,12 +13,9 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-            Nós somos a equipe Indominus Dev, formada por cinco integrantes
-            apaixonados por tecnologia e inovação. Cada membro da nossa equipe
-            traz habilidades únicas, que vão desde o desenvolvimento front-end e
-            back-end até a análise de dados e design de interfaces. Nosso
-            objetivo é oferecer soluções eficientes e personalizadas em
-            software, atendendo às necessidades do projeto.
+          Somos a Indominus, uma equipe composta por cinco especialistas apaixonados por tecnologia
+          e inovação. Unimos habilidades em desenvolvimento front-end, back-end, análise de dados
+          e design para criar soluções eficientes e sob medida.
           </p>
         </div>
       </div>

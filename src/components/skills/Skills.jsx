@@ -5,14 +5,12 @@ const Skills = () => {
   return (
     <section className="skills section" id="skills">
       <h2 className="section__title">Missão</h2>
-      <h3 className="section__subtitle">Nossa Visão</h3> {/* Subtítulo Adicionado */}
+      <h3 className="section__subtitle">   </h3> {/* Subtítulo Adicionado */}
       
       <p className="skills__description">
-        A missão da Indominus Dev é criar soluções acessíveis para os atuais
-        problemas de nossa sociedade. Temos o compromisso de fornecer serviços
-        de alta qualidade que atendam às necessidades de nossos clientes e
-        superem suas expectativas. Utilizando as tecnologias disponíveis,
-        buscamos ajudar as pessoas a lidarem com seus problemas.
+      Nossa missão é fornecer soluções acessíveis e impactantes
+      que ajudem a resolver os desafios da sociedade, sempre utilizando 
+      a mais alta qualidade e inovação tecnológica.
       </p>
     </section>
   );
