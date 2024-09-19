@@ -21,6 +21,7 @@ function App() {
         <About />
         <Skills />
         <Work />
+        <Team />
        {/* <Team /> */} 
        {/* <Teams />*/}
         <Contact />

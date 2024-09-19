@@ -5,31 +5,33 @@ import adryanImage from '../../assets/adryan-foto.jpeg';
 import lucasImage from '../../assets/lucas-foto-black.jpeg';
 
 
+{/* exemplo pra colocar as img  image: 'path/to/adr.jpg', */}
+
 const teamData = [
   {
     name: 'Adryan Alexander',
     title: 'Desenvolvedor Front-end',
-    image: adryanImage,
+    
   },
   {
     name: 'Edkarllos Fernando',
     title: 'Desenvolvedor Database',
-    image: 'path/to/douglas.jpg',
+   
   },
   {
     name: 'Lucas Batista',
     title: 'Desenvolvedor Full-stack',
-    image: lucasImage,
+    
   },
   {
     name: 'Nicholas Balbino',
     title: 'Desenvolvedor Full-stack',
-    image: 'path/to/danilo.jpg',
+    
   },
   {
     name: 'Pedro Lopes',
     title: 'Designer',
-    image: 'path/to/danilo.jpg',
+    
   },
 ];
 
