@@ -17,11 +17,11 @@ Fornecer soluções acessíveis e impactantes que ajudem a resolver os desafios 
 
 | Integrante         | Proficiência                  |
 |--------------------|-------------------------------|
-| **Adryan Alexander** | *Descrever proficiência aqui* |
-| **Edkarllos Fernando** | *Descrever proficiência aqui* |
-| **Lucas Batista**     | *Descrever proficiência aqui* |
-| **Nicholas Balbino**  | *Descrever proficiência aqui* |
-| **Pedro Lopes**       | *Descrever proficiência aqui* |
+| **Adryan Alex** | *Front-End Dev* |
+| **Edkarllos Fernando** | *Banco de Dados* |
+| **Lucas Batista**     | *Desenvolvedor Mobile* |
+| **Nicholas Balbino**  | *Back-End Dev* |
+| **Pedro Lopes**       | *Design* |
 
 ## Contato
 
