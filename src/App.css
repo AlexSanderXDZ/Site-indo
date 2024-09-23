@@ -5,12 +5,12 @@
   /* Cores */
   --primary-color: rgba(25, 118, 210, 1);
   --primary-color-dark: rgb(150, 203, 255);
-  --button-text-color: rgba(255, 255, 255, 1);
-  --title-color: rgba(51, 51, 51, 1);
-  --title-color-dark: rgb(85, 86, 87);
-  --text-color: rgba(30, 30, 30, 1);
-  --body-color: rgba(245, 245, 245, 1);
-  --container-color: rgba(255, 255, 255, 1);
+  --button-text-color: rgb(255, 255, 255);
+  --title-color: rgb(255, 255, 255);
+  --title-color-dark: rgb(255, 255, 255);
+  --text-color: rgb(255, 255, 255);
+  --body-color: rgb(15, 15, 15);
+  --container-color: rgb(43, 43, 43);
 
   /* Fontes */
   --body-font: "Poppins", sans-serif;
@@ -221,7 +221,7 @@ img {
 	font-size:18px;
 	font-weight: 700;
 	text-transform:uppercase;
-	transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out; 
 	-moz-transition: all .25s ease-in-out;
 	-webkit-transition: all .25s ease-in-out;
 }

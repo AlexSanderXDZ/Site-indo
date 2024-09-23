@@ -9,21 +9,23 @@ import Footer from './components/footer/Footer';
 import ScrollUp from './components/ScroolUp/ScrollUp';
 import Work from './components/work/Work';
 import Team from './components/team/Team';
-import Teams from './components/teama/Teams';
+
 
 function App() {
   return (
     <>
       <Header />
+      
 
       <main className="main">
         <Home />
         <About />
+        <Team />
         <Skills />
         <Work />
-        <Team />
+      
        {/* <Team /> */} 
-       {/* <Teams />*/}
+       
         <Contact />
       
         
