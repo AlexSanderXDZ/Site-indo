@@ -17,7 +17,7 @@ Fornecer soluções acessíveis e impactantes que ajudem a resolver os desafios 
 
 | Integrante         | Proficiência                  |
 |--------------------|-------------------------------|
-| **Adryan Alex** | *Front-End Dev* |
+| **Adryan Alex.** | *Front-End Dev* |
 | **Edkarllos Fernando** | *Banco de Dados* |
 | **Lucas Batista**     | *Desenvolvedor Mobile* |
 | **Nicholas Balbino**  | *Back-End Dev* |
