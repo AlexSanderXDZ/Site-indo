@@ -30,7 +30,7 @@ const teamData = [
   },
   {
     name: 'Pedro Lopes',
-    title: 'Design',
+    title: 'Analista de Sistemas',
     
   },
 ];
