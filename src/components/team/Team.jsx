@@ -12,6 +12,7 @@ const teamData = [
     name: 'Adryan Alexander',
     title: 'Front-End Dev',
     
+    
   },
   {
     name: 'Edkarllos Fernando',
@@ -21,6 +22,7 @@ const teamData = [
   {
     name: 'Lucas Batista',
     title: 'Desenvolvedor Mobile',
+    image: lucasImage,
     
   },
   {
