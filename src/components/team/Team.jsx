@@ -10,27 +10,27 @@ import lucasImage from '../../assets/lucas-foto-black.jpeg';
 const teamData = [
   {
     name: 'Adryan Alexander',
-    title: 'Proficiencia de cada',
+    title: 'Front-End Dev',
     
   },
   {
     name: 'Edkarllos Fernando',
-    title: 'Proficiencia de cada',
+    title: 'Banco de Dados',
    
   },
   {
     name: 'Lucas Batista',
-    title: 'Proficiencia de cada',
+    title: 'Desenvolvedor Mobile',
     
   },
   {
     name: 'Nicholas Balbino',
-    title: 'Proficiencia de cada',
+    title: 'Back-End Dev',
     
   },
   {
     name: 'Pedro Lopes',
-    title: 'Proficiencia de cada',
+    title: 'Design',
     
   },
 ];
